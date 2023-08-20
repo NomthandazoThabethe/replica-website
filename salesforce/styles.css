@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+header {
+    background-color: white;
+    color: #000; /* Change text color to black */    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-left {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.logo-icon {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(37, 37, 254);
+}
+
+.header-right ul {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-right li {
+    margin-left: 30px;
+}
+
+.header-left li{
+    margin-left: 20px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.try-for-free-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+
+header button a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-a a{
+    text-decoration: none;
+    color: black;
+}
+
+.dark-blue-section {
+    background-color: darkblue;
+    color: white;
+}
+
+.dark-blue-section a{
+    color: white;
+}
+
+.dark-blue-section img{
+    width: 100px; 
+    height: auto;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.center-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%; 
+    list-style: none;
+    display: flex;
+}
+
+ .main-body{
+    margin: 0;
+    padding: 20px;
+    background-image: url('main-body-image.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-body .main-body-text {
+    color: var(--pbc-g-blue-vibrant-20);
+    font-family: var(--pbc-g-font-display);
+    /* font-size: 48px; */
+    /* Remove default margin */
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.start-free-trial{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.start-free-trial{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.watch-demo{
+    background-color: white;
+    color:  #007bff;
+    border:  2px solid #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.main-body img{
+    max-width: 500px; /* Adjust image size as needed */
+    height: auto;
+    width:1024;
+}
+
+.buttons {
+    gap: 30px; 
+} 
+
+.title-for-products h2 {
+    color: #000;
+    font-size: 28px; /* Adjust the font size as needed */
+    margin: 0;
+    padding: 20px;
+
+}
+
+.card-grid-learn-products {
+    display: flex;
+    margin: 20px;
+    padding: center;
+}
+
+.card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    flex: 1; /* Distribute available space evenly among cards */
+    margin: 0 10px; /* Add spacing between cards */
+    display: flex; /* Added display: flex to center align items */
+    flex-direction: column;
+    max-width: calc(30% - 20px);
+    border-radius: 15px; /* Adjust border-radius for rounded corners */
+}
+
+
+.card:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+}
+
+.card-header{
+    padding: 0px;
+}
+.card-header img {
+    width: 100%;
+    padding: 0px;
+}
+
+.card-footer a {
+    color: #007bff;
+}
+
+
+.card-body {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.card-footer{
+    padding: 20px;
+    background-color: white;
+}
+
+.view-our-products{
+    display: flex;
+    justify-content: center; /* Center-align content horizontally */
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.products-button{
+    background-color: white;
+    color:  #007bff;
+    border:  2px solid #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px
+}
+
+.learn-products{
+    background-image: url(pb-hp-products-bg.webp);
+    padding: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-salesforce h2{
+    color: #000;
+    font-size: 30px; /* Adjust the font size as needed */
+    margin: 0;
+    padding: 80px;
+}
+
+.about-salesforce p{
+    color: #000;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin: 0;
+}
+
+.buttons-in-about-section{
+    padding: 30px;
+    margin: 0 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
