@@ -185,7 +185,7 @@ header button a {
 }
 
 .buttons {
-    gap: 30px; 
+    gap: 40px; 
 } 
 
 .title-for-products h2 {
@@ -203,13 +203,14 @@ header button a {
 }
 
 .card {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    flex: 1; /* Distribute available space evenly among cards */
-    margin: 0 10px; /* Add spacing between cards */
-    display: flex; /* Added display: flex to center align items */
+    box-shadow: 0px 6px 6px rgba(68, 55, 55, 0.1); /* Adjusted shadow effect */
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
     flex-direction: column;
     max-width: calc(30% - 20px);
-    border-radius: 15px; /* Adjust border-radius for rounded corners */
+    border-radius: 10px; /* Rounded corners for the card */
+    cursor: pointer;
 }
 
 
@@ -282,6 +283,114 @@ header button a {
     padding: 30px;
     margin: 0 50px;
 }
+
+.view-customers h2{
+    color: #000;
+    font-size: 30px; /* Adjust the font size as needed */
+    margin: 0;
+    padding: 80px;
+}
+
+.view-customers-button{
+    background-color: white;
+    color:  #007bff;
+    border:  2px solid #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.view-customers{
+    align-items: center;
+    
+}
+
+.card-grid-customers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 140px;
+    padding-top: 50px;
+    background-image: url(pb-hp-logos-bg-2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center bottom;
+  }
+
+  .card-row {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px; 
+    cursor: pointer;
+  }
+
+  .card-customer {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: calc(15% - 10px); /* Adjust the width of each card */
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(49, 43, 43, 0.1); /* Shadow effect */
+    background-color: white;
+
+  }
+
+  .card-customer img{
+    width: 100%;
+    padding: 0px;
+  }
+  
+  .card-salesforce-for-free{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    height: 500px;
+    width: 1200px;
+  }
+
+  .card-content-for-free {
+    flex: 2;
+  }
+
+  .card-image-for-free {
+    flex: 1;
+    max-width: 100px;
+    margin-left: 20px;
+  }
+
+  .img-for-free {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .center-container-for-free {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+
+  .see-pricing{
+    background-color: white;
+    color:  #007bff;
+    border:  2px solid #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+
+
+
 
 
 
