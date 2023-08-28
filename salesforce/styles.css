@@ -2,6 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", sans-serif;
+    background-color: white;
+}
+
+.main{
+    background-color: white;
 }
 
 header {
@@ -10,7 +15,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    
+    /* position: fixed; */
+    z-index: 100;
+
 }
 
 .contact-us {
@@ -128,7 +135,7 @@ header button a {
 
  .main-body{
     margin: 0;
-    padding: 20px;
+    padding: 80px;
     background-image: url('main-body-image.webp');
     background-size: cover;
     display: flex;
@@ -148,7 +155,10 @@ header button a {
 
 }
 
-
+.main-body h1{
+    font-size: 50px;  
+    color: #070f45;  
+} 
 
 .start-free-trial{
     background-color: #4CAF50; /* Green */
@@ -189,7 +199,7 @@ header button a {
 } 
 
 .title-for-products h2 {
-    color: #000;
+    color: #070f45;
     font-size: 28px; /* Adjust the font size as needed */
     margin: 0;
     padding: 20px;
@@ -203,15 +213,19 @@ header button a {
 }
 
 .card {
-    box-shadow: 0px 6px 6px rgba(68, 55, 55, 0.1); /* Adjusted shadow effect */
     flex: 1;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
-    max-width: calc(30% - 20px);
-    border-radius: 10px; /* Rounded corners for the card */
+    max-width: calc(80% - 20px);
+    border-radius: 20px; 
     cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: white;
 }
+
+.card-customer
 
 
 .card:last-child {
@@ -259,7 +273,8 @@ header button a {
 }
 
 .learn-products{
-    background-image: url(pb-hp-products-bg.webp);
+    background-image: url(pb-hp-products-bg.webp); 
+    /* background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(234, 245, 254) 100%); */
     padding: 90px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -267,7 +282,7 @@ header button a {
 }
 
 .about-salesforce h2{
-    color: #000;
+    color: #070f45;
     font-size: 30px; /* Adjust the font size as needed */
     margin: 0;
     padding: 80px;
@@ -282,10 +297,11 @@ header button a {
 .buttons-in-about-section{
     padding: 30px;
     margin: 0 50px;
+    gap: 5 10px;
 }
 
 .view-customers h2{
-    color: #000;
+    color: #070f45;
     font-size: 30px; /* Adjust the font size as needed */
     margin: 0;
     padding: 80px;
@@ -302,7 +318,8 @@ header button a {
 
 .view-customers{
     align-items: center;
-    
+    /* background-color:linear-gradient(to bottom, #31aca1, transparent) ; */
+    background-color:linear-gradient(180deg, #FFFFFF 0%, rgb(165, 181, 194) 100%);
 }
 
 .card-grid-customers {
@@ -312,10 +329,11 @@ header button a {
     padding: 140px;
     padding-top: 50px;
     background-image: url(pb-hp-logos-bg-2.webp);
-    background-size: contain;
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
     background-position: center bottom;
+    /* background-color: #e8fffd;  */
   }
 
   .card-row {
@@ -325,17 +343,20 @@ header button a {
     justify-content: center;
     margin-top: 20px; 
     cursor: pointer;
+    max-width: calc(200% - 100px);
+    border-radius: 10px;
+    
   }
 
   .card-customer {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
-    width: calc(15% - 10px); /* Adjust the width of each card */
+    width: calc(20% - 10px); /* Adjust the width of each card */
     box-sizing: border-box;
     box-shadow: 0px 4px 6px rgba(49, 43, 43, 0.1); /* Shadow effect */
     background-color: white;
-
+    border-radius: 10px;
   }
 
   .card-customer img{
@@ -348,7 +369,7 @@ header button a {
     align-items: center;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background-color: white;
     height: 500px;
@@ -356,18 +377,24 @@ header button a {
   }
 
   .card-content-for-free {
-    flex: 2;
+    /* flex: 2; */
+    flex: 1;
+    padding: 20px;
   }
 
   .card-image-for-free {
     flex: 1;
-    max-width: 100px;
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    /* margin-left: 20px; */
   }
 
   .img-for-free {
     width: 100%;
-    object-fit: cover;
+    height: auto;
+    max-width: 100%;
   }
 
   .center-container-for-free {
@@ -376,9 +403,10 @@ header button a {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: transparent;
   }
 
+  
 
   .see-pricing{
     background-color: white;
@@ -388,21 +416,503 @@ header button a {
     cursor: pointer;
   }
 
+  .card-content-for-free h3{
+    padding: 90px;
+    font-size: 30px; /* Adjust the font size as needed */
+    margin: 0;
+    color: #070f45;
+
+  }
+
+  .buttons-try-for-free-section{
+    padding: 90px;
+    padding-top: 10px;
+    gap: 80px;
+  }
+
+  .how-help h2{
+    color: #070f45;
+    font-size: 28px; /* Adjust the font size as needed */
+    margin: 0;
+    padding: 20px;
+  }
+
+  .card-grid-learn-products {
+    display: flex;
+    margin: 20px;
+    padding: center;
+}
+
+.card-help {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(30% - 20px); 
+    cursor: pointer;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+.card-help:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+}
+
+.card-help-header{
+    padding: 0px;
+}
+.card-help-header img {
+    width: 100%;
+    padding: 0px;
+}
+
+.card-footer a {
+    color: #007bff;
+}
+
+.how-help-container{
+    padding: 90px;
+}
+
+.card-grid-how-help{
+    display: flex;
+    margin: 20px;
+    padding: center;
+}
+
+.create h2{
+    color: #070f45;
+    font-size: 28px; /* Adjust the font size as needed */
+    margin: 0;
+    padding: 20px;
+}
+
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.footer-content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
+.social-icons a i {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 0 20px; /* Add spacing between icons */
+    color: black;
+}
+
+.new-to-salesforces ul{
+    list-style: none;
+    
+}
+
+.new-to-salesforces a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.about-salesforces ul{
+    list-style: none;
+}
+
+.about-salesforces a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.Popular-links ul{
+    list-style: none;
+}
+
+.Popular-links a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.blue-footer {
+    background-color: darkblue;
+    color: white;
+    /* padding: 20px; */
+}
+
+.content-footer-blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.world-wide i {
+    margin-right: 5px;
+}
+
+.content-footer-blue p {
+    flex: 1; /* Take up remaining space */
+    font-size: 12px;
+}
+
+.blue-footer img{
+    width: 30px; 
+    height: auto;
+    /* align-items: center; */
+    margin-right: 2px;
+}
+
+.footer-links a{
+    color: #007bff;
+    margin: 0 10px;
+}
+
+.content-footer-blue i{
+    color:white;
+}
+
+.world-wide-button{
+    color: white;
+    background-color: darkblue;
+    border:none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px; 
+}
+
+.world-wide-button{
+    color: white;
+}
+
+.card-container-tech {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    padding-left: 40px;
+}
+
+.card-grid-tech {
+    display: flex;
+    gap: 60px; /* Add spacing between cards */
+}
+
+.card-tech {
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    width: 400px; /* Set the width of the cards */
+    height: 500px; /* Set the height of the cards */
+
+}
+
+.img-tech {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-content-for-quastions {
+    /* display: flex; */
+    
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* background-color: rgb(61, 190, 245); */
+    height: 500px;
+    width: 1200px;
+    background-image: url(pb-hp-footer-mid3.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center bottom;
+
+}
+
+.center-container-for-questions{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center; 
+    /* padding-top: 90px; */
+}
+
+.card-content-for-quastions h3{
+    font-size: 30px; /* Adjust the font size as needed */
+    margin: 0;
+    color: #070f45;
+    align-items: center;
+    padding-top: 70px;
+}
+
+
+.contact-us-link {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button-and-link-for-questions{
+    align-items: center;
+}
+
+.button-and-link-for-questions{
+    padding-top: 50px;
+    max-width: 0 20px;
+
+}
+
+.body-questions {
+    align-items: center;
+    color: #007bff;
+    padding-left: 250px;
+}
+
+.body-questions p{
+    padding-top: 50px;
+}
+
+.another-div{
+    background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(234, 245, 254) 100%);
+    padding-top: 80px;
+}
+
+.for-grandpa-img{
+    background-image: url(https://wp.salesforce.com/en-au/wp-content/uploads/sites/12/2023/02/pb-hp-products-bg-2.png?resize=1536,307);
+    width: 100%;
+    height: 200px;
+    background-color: #dff9f9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.job-title-select {
+    width: 216px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .email-input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .name-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .name-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .card-container-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card-register {
+    display: flex;
+    width: 70%;
+    border: none;
+    border-radius: none;
+    overflow: hidden;
+  }
+
+  .card-content-register {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+  }
+
+  .left-content {
+    flex: 1;
+  }
+
+  .right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    background-color: #f5f5f5;
+  }
+
+  .flex-row{
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Align items vertically within the flex container */
+  } 
+
+  .employees {
+    width: 216px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .company-input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .label {
+    font-size: 14px;
+    /* margin-bottom: 0px; */
+    margin-top: 5px;
+  }
+
+  .job-title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .country {
+    width: 216px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .phone-input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .product-interest{
+    width: 440px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .comments-input{
+    width: 420px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .checkbox-input {
+    margin-right: 10px;
+
+  }
+
+  .checkbox-container{
+    padding-top: 20px;
+  }
+
+  .disclaimer-text {
+    font-size: 10px;
+  }
+
+  .contact-us-button{
+    margin-top: 15px;
+    padding: 10px 170px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .content-for-left-wing{
+    padding-top: 30px;
+  }
+  .question-were-here-to-help{
+    padding-top: 50px;
+  }
+  
+  .enhanced-unordered-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 20px; /* Add left padding for the list items */
+  }
+
+  .enhanced-unordered-list li {
+    position: relative; /* Make sure the ::before element is positioned relative to the list item */
+    margin-bottom: 10px; /* Add some spacing between list items */
+  }
+
+  .enhanced-unordered-list li::before {
+    content: '\2714'; /* Unicode character for checkmark */
+    font-size: 16px;
+    color: green; /* Light blue color */
+    position: absolute;
+    left: -20px; /* Position the checkmark to the left of the list item */
+    top: 0; /* Align the checkmark vertically with the list item */
+  }
+
+  .sentence-fill{
+    padding-top: 20px;
+  }
+
+  .already-customer{
+    padding-top: 20px;
+  }
+
+  .links-to-billing-and-support{
+    padding-top: 20px;
+  }
+
+  .right-wing-content{
+    align-items: center;
+  }
+
+  .contact-us-section{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
